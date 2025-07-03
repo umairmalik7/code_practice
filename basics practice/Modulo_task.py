@@ -1,10 +1,13 @@
-#User function Template for python3
+N = int(input("Enter an integer: "))
 
-class Solution:
-    def modTask(self, N):
-        # code here
-        if N == 1:
-            return N
-        else:
-            return N//2 +1
+K = 1
+while  K < N:
+    x = N % K
+    print( f" {N}%{K} = {x}")
+    K += 1
+   
+if N == 1:
+    print(K)
+else: 
+    print(K-1)
     
