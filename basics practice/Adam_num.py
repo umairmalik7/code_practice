@@ -1,21 +1,18 @@
+#User function Template for python3
 import math
 
-num = input("Enter a number")
-def checkAdamOrNot( N):
+class Solution:
+    def checkAdamOrNot(self, N):
         # code here 
-        if N is int:
-            sqofN = math.exp(N)
-        else:
-            isqofN = int(N)
-            sqofN = math.exp(math.ceil(isqofN))
-
-
-        reverse = sqofN.reverse()
-        sq_root = math.sqrt(reverse)
-        revSqRoot = sq_root.reverse(round(sq_root))
-        if N == revSqRoot:
-            print("true")
-        else:
-            print("False")
+        isqofN = int(N)
+        sqofN = isqofN**2
+        sqofN = str(sqofN)
         
-checkAdamOrNot(num)
+
+        reverse = int(sqofN[::-1])
+        sq_root = str(int(math.sqrt(reverse)))
+        revSqRoot = sq_root[::-1]
+        if N == int(revSqRoot):
+            return "YES"
+        else:
+            return "NO"
