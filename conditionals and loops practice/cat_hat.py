@@ -15,4 +15,3 @@ def cat_hat(str):
 
         
 
-cat_hat(word)
