@@ -17,7 +17,7 @@ def closestNumber( n, m):
                 x = math.isclose(j,n,rel_tol=0.3)
                 print(x)
                 if x == True: break
-        if n - i < j - n:
+        if i - n < j - n:
             print(i)
         else:
             print(j)
