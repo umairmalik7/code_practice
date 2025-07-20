@@ -5,15 +5,15 @@ mod = int(input("Enter mod: "))
 def closestNumber( n, m):
         # code here 
     if m != 0:
-        for i in range(n,20,-1):
+        for i in range(n,n-100000,-1):
             if i % m == 0:
                 print(f"the value of i = {i}")
                 y  = math.isclose(i,n,rel_tol=0.5)
                 if y == True: break
-        for j in range(n,n+20):
+        for j in range(n,n+100000):
             if j % m == 0:
                 print(f"the value of j = {j}")
-                x = math.isclose(j,n,rel_tol=0.5)
+                x = math.isclose(j,n,rel_tol=1)
                 if x == True: break
         
         if n > 0:
