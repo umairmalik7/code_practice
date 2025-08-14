@@ -1,7 +1,8 @@
-		
 #User function Template for python3
 class Solution:
-	def removeDuplicates(s):
+
+	
+	def removeDuplicates(self, s):
 	    # code here
 	    a = []
         for i in s:
@@ -10,4 +11,3 @@ class Solution:
             
         newstr = "".join(a)
         return newstr
-    
